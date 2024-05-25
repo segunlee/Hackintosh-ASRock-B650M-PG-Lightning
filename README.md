@@ -1,25 +1,23 @@
-# Hackintosh-ASRock-B650M-Riptide-7800X3D
+# Hackintosh-ASRock-B650M-PG-Lightning
 
 ![Thumbnail](Docs/Thumbnail.png)
 
 # Current macOS
 
-Current Version: macOS Sonoma Beta 7
+Current Version: macOS Sonoma 14.5
 
 # Hardware
-- CPU: AMD Ryzen 7 7800X3D
-- Board: ASRock B650M Riptide
-- RAM: 32 GB (2x16GB) Kingston DDR5 6000Mhz CL32
-- GPU: MSI Gaming Trio X 6900 XTX
-- PSU: Corsair SF750
-- Case: Asus AP201 (Micro-ATX)
-- Wifi/BT: Fenvi T919 with Broadcom Chipset
+- CPU: AMD Ryzen 5 7600 6-Core Processor
+- Board: ASRock B650M PG Lightning
+- RAM: 32 GB (2x16GB) 
+- GPU: AMD Radeon RX 570 (and NVIDIA Geforce RTX 4060 Ti [NOT USE])
+- BT: USB BT Dongle
 
 # Working
 - CPU Power Management
 - USB Ports
 - Sleep/Wake
-- Wifi/BT
+- BT
 
 # Not working
 iGPU, but this is common. You should disable it in BIOS or via Device Properties just for macOS.
@@ -34,7 +32,6 @@ I also let Fast Boot Enabled, no issues so far.
 Only if you need Secure Boot (Enable Secure Boot, Secure Boot Mode to Custom and then in the Key Management all .efi files in your EFI-folder need to be enrolled/whitelisted with "Enroll this EFI").
 
 # USB Port Mapping
-
 USB-Port Mapping is done via `SSDT-USB-B650M-Riptide.aml`:
 - `XH00` is defined in `DSDT.aml`. 
 - `XHC0`, `XHC1` and `XHC2` are defined in `SSDT-USB.aml`. 
@@ -43,6 +40,10 @@ USB-Port Mapping is done via `SSDT-USB-B650M-Riptide.aml`:
 - The USB-Port Mapping for all controllers is in the `SSDT-USB-B650M-Riptide.aml`.
 
 ![USB-Port-Mapping_B650M-Riptide](Docs/USB-Port-Mapping_B650M-Riptide.png)
+
+## EDIT
+REMAPPED BY USBTOOLS FOR ASRock B650M PG Lightning
+
 
 # Notes
 
