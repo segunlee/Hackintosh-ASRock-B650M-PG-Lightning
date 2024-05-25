@@ -3,8 +3,10 @@
 ![Thumbnail](Docs/Thumbnail.png)
 
 # Current macOS
-
 Current Version: macOS Sonoma 14.5
+
+# Current OpenCore
+Current Version: OpenCore 1.0.0
 
 # Hardware
 - CPU: AMD Ryzen 5 7600 6-Core Processor
