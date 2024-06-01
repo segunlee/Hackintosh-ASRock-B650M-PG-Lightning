@@ -21,6 +21,12 @@ Current Version: OpenCore 1.0.0
 - Sleep/Wake
 - BT
 
+# BIOS Setting
+- Re-Size BAR Support: Disabled
+- Auto Driver Install: Disabled
+- STA Mode: AHCI
+- SVM Enable: Enabled
+
 # Not working
 iGPU, but this is common. You should disable it in BIOS or via Device Properties just for macOS.
 
